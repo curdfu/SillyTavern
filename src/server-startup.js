@@ -20,6 +20,7 @@ import { router as presetsRouter } from './endpoints/presets.js';
 import { router as secretsRouter } from './endpoints/secrets.js';
 import { router as thumbnailRouter } from './endpoints/thumbnails.js';
 import { router as novelAiRouter } from './endpoints/novelai.js';
+import { router as novelsRouter } from './endpoints/novels.js';
 import { router as extensionsRouter } from './endpoints/extensions.js';
 import { router as assetsRouter } from './endpoints/assets.js';
 import { router as filesRouter } from './endpoints/files.js';
@@ -154,6 +155,7 @@ export function setupPrivateEndpoints(app) {
     app.use('/api/secrets', secretsRouter);
     app.use('/thumbnail', thumbnailRouter);
     app.use('/api/novelai', novelAiRouter);
+    app.use('/api/novels', novelsRouter);
     app.use('/api/extensions', extensionsRouter);
     app.use('/api/assets', assetsRouter);
     app.use('/api/files', filesRouter);
