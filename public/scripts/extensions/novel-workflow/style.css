@@ -1,0 +1,70 @@
+.novel-workflow {
+    position: fixed;
+    inset: 8vh 4vw;
+    z-index: 3000;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 0.75rem;
+    min-height: 360px;
+    padding: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 8px;
+    background-color: var(--SmartThemeBlurTintColor);
+    color: var(--SmartThemeBodyColor);
+    box-shadow: 0 10px 40px var(--black50a);
+}
+
+.novel-workflow.hidden {
+    display: none;
+}
+
+.novel-workflow__menu-entry {
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    background: transparent;
+    color: var(--SmartThemeBodyColor);
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    opacity: 0.5;
+    align-items: baseline;
+    column-gap: 10px;
+}
+
+.novel-workflow__menu-entry:hover {
+    opacity: 1;
+}
+
+.novel-workflow__header,
+.novel-workflow__actions,
+.novel-workflow__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.novel-workflow__header {
+    justify-content: space-between;
+}
+
+.novel-workflow__header h3,
+.novel-workflow__body h4 {
+    margin: 0;
+}
+
+.novel-workflow__body {
+    min-height: 0;
+    overflow: auto;
+}
+
+.novel-workflow__form {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.novel-workflow__form label {
+    display: grid;
+    gap: 0.25rem;
+}
